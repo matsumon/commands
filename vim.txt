@@ -1,0 +1,57 @@
+Vim
+
+shift a takes u to end of line and appends
+shift 8 highlight and then n to go to next instance
+
+find a string
+/{string to find}
+
+make a new line and edit above current line
+O
+
+make a new line and edit above current line
+o
+
+delete a line
+dd
+
+go to end of line
+$
+
+go to start of line
+0
+
+go to first non white char in a line
+^
+
+go forward a word
+w
+
+go back a word
+b
+
+delete a word and enter insert mode
+cw
+
+undo
+u
+
+copy
+yy
+
+paste 
+p
+
+go to start of file
+gg
+
+go to end of file
+GG
+
+append at end of word
+ea
+
+Multiple comment
+    Ctrl v
+    Shift I add comment symbol to line
+    Esc wait for other liens to populate

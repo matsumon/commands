@@ -1,0 +1,68 @@
+VScode
+
+Ctrl d select -- next instance under cursor
+
+Alt click -- add cursor
+
+Alt shift click --to add multiple cursors in a block
+
+Ctrl shift k --dd
+
+Ctrl b --get rid of file explorer
+
+Ctrl --cut/delete a line
+
+Ctrl delete -- delete next word
+
+Ctrl p --search for file
+
+F2 --update variable
+
+Ctrl shift L -- select and edit all instances
+
+Shift tab --indent left
+
+Shift end --select to end of line
+
+Shift home --select to start of line
+
+Ctrl shift u -- bring up terminal/debug/problems console
+
+Shift alt a --block comment
+
+Ctrl / -- line comment
+
+Alt arrow up / down--  move line up / down
+
+Shift alt up / down -- copy line up / down
+
+Ctrl backspace --remove word
+
+Home -- front of line
+
+End-- end of line
+ 
+https://thomlom.dev/vscode-shortcuts-boost-productivity/
+
+
+Press release alt then type vls - close editor
+
+Ctrl enter while on desired file - opens split editor
+
+Ctrl k s - save all files
+
+Ctrl shift \ - go to matching brace
+
+Ctrl enter - open new line below
+
+Ctrl shift enter - Open new line above
+
+Open SSH
+	Open Command Palette - Ctrl Shift P or bottom lower left green
+	Remote-SSH
+	Flip Server
+Prettier
+ 	1. shift alt f -> Format Document
+		OR
+	1. Select the text you want to Prettify
+	2. shift + alt + f -> Format Selection

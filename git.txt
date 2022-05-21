@@ -1,0 +1,71 @@
+Git
+
+git rebase -i HEAD~5
+	i for interactive
+	5 is the number of commits to squash
+	5 can also be the oldest commit
+pick - pick the oldest commit 
+squash - takes the current commit and squashes it into the previous
+	Ex) oldest   pick       squash     squash   newest
+git -abort
+git --continue
+
+checkout branch from remote
+	git checkout -b localBranchName remoteBranchName
+
+rebase
+
+git rebase -i <commit hash>
+squash pick 
+git push --force
+
+rebase while perserving merges
+
+git rebase -ir <commit has>
+squash pick
+git push --force
+
+merge branches
+
+checkout branch you want to have combined with
+Example) you have a feature on a branch and someone push to main
+
+git checkout feature_branch
+git merge main
+
+Revert all changes from working directory
+git revert --hard 
+or
+git checkout .
+
+amends last commit
+git commit --amend
+git commit --amend -m "Revise commit message"
+git add files
+git rm files
+git commit --amend--no-edit #amends commit without changing message
+git push
+
+revert a single file to a previous commit
+git checkout <git commit id> -- path_to_file
+Ex)
+git checkout f7e65cdee7a63a941db5cc8441669efcf5b6b5b2 -- /file/file.txt
+
+push commit to another branch head
+git push origin HEAD:<branch name>
+ex) 
+git push origin HEAD:feature/nmatsumoto/LIM-port-documentation
+
+push commit from local branch to remote branch
+git push origin local_branch:origin/remote_branch
+
+Solving git merge conflicts
+	find the <<<<head<< 
+	delete all of the <<<head <<tail etc...
+	git add files changes
+	git push
+	Should now be merged
+
+Force Pull
+git fetch //grabs all branch references 
+git reset --hard origin/<branch_name> //pull in changes and gets rid of changes

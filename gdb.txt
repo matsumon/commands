@@ -1,0 +1,18 @@
+GDB
+
+Set breakpoint: b *address
+    Ex) b *0x7c00
+x/i - show disassembled sequences of instructions in boot loader
+c: continue
+x100/wx[address or register] prints values in memory
+    X100wx 0x7c00
+    Examine 100 values 
+sized as word (4 bytes) 
+    b - byte
+    g - 8 bytes
+in hexadecimal
+    d - decimal 
+info break: list all breakpoints
+del #: delete breakpoint #
+b *function_name - set breakpoint at function name
+bt - prints backtrace

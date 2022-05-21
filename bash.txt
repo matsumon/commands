@@ -1,0 +1,49 @@
+to get rid of line endings
+dos2unix filesname
+
+To schedule tasks
+https://www.dummies.com/computers/operating-systems/linux/how-to-schedule-jobs-in-linux-at-and-crontab-commands/
+at now + NUM hours--then type commands
+	hours can be converted to days, minutes
+
+see what key strokes correspond to which keys
+xev to see what key strokes correspond to which keys IE push j xev will show j
+
+download files to vim
+scp filename osu/*ssh*/:
+
+to get files from vim
+scp osu:/*filepath*/filename
+
+to map network sshfs apt get it later
+pdf split imagemagick
+
+scroll up and down
+less
+ex) orange.txt | less
+
+scroll forward one screen 
+ctrl f 
+
+scroll back one screen 
+ctrl b
+
+Get and install docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo usermod -aG docker $USER
+
+history # gives past history of used commands
+
+fuser <port #>/tcp # returns pid of process bound to that port. Give it -k option to kill it
+
+nslookup ip address - looks up dns name
+
+hostname -i returns ip
+
+hostname returns dns name
+
+find text in files
+grep -irI “text to find” //find text in files
+
+find file
+find . -name “file name” //find file recursively from current directory

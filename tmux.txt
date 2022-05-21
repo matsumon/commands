@@ -1,0 +1,23 @@
+Tmux
+
+start tmux session
+tmux
+
+create vertical screen 
+`"
+
+create horizontal screen
+`%
+
+create new screen
+`c
+
+navigate in between screens in one page
+`{arrow keys}
+
+navigate between session pages
+`{#}
+    at the bottom left will be the number of tmux sessions
+
+kill all tmux sessions
+kill-all-tmux 
