@@ -66,3 +66,9 @@ Prettier
 		OR
 	1. Select the text you want to Prettify
 	2. shift + alt + f -> Format Selection
+
+Ctrl Shift P - brings up command palette so you can adjust keybindings
+Ctrl alt shift l - sets to lower case, but due to custom key bindings
+Ctrl alt shift u - sets to upper case, but due to custom key bindings
+
+ctrl \ split panels
