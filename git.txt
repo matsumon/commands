@@ -69,3 +69,9 @@ Solving git merge conflicts
 Force Pull
 git fetch //grabs all branch references 
 git reset --hard origin/<branch_name> //pull in changes and gets rid of changes
+
+List ignored files
+git ls-files . --ignored --exclude-standard --others
+
+List untracked files
+git ls-files . --exclude-standard --others
