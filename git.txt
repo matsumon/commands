@@ -78,3 +78,20 @@ git ls-files . --ignored --exclude-standard --others
 
 List untracked files
 git ls-files . --exclude-standard --others
+
+Submodules: Repo within a repo https://www.youtube.com/watch?v=gSlXo2iLBro&t=85s
+Creates a .gitmodules which is how git keeps track of submodules 
+contains path - path in directory to submodule and 
+url - the git repo url
+
+git submodule add {git repo to add as submodule} // adds a desired submodule to repo
+After need to git commit "files added" and git push
+
+grabs all submodules and adds it to repo
+git submodule update --init
+
+clone directory + all submodules
+git clone --recurse-submodules {git repo to clone}
+
+recursively pulls in all submodules + other files
+git pull --recurse-submodules
