@@ -3,3 +3,4 @@ Windows
 Windows shift s -take a snippet of a screenshot
 windows v - get to copy/paste history
 windows shift arrow - snap screen to left or right moniter
+shift right click - populates menu with option to open powershell in present folder
