@@ -1,4 +1,14 @@
 Windows
+Installing Windows Subsystem for Linux 
+	1) Windows Key + R 
+	2) Type "appwiz.cpl"  
+	3) On the left column, click "Turn Windows features on or off" 
+	4) Scroll down to "Windows Subsystem for Linux" and check the box 
+	5) Click Ok and reboot for it to install 
+	6) After it reboots, open the Microsoft Store 
+	7) Search for "Ubuntu" and install it. 
+	8) Once its installed, click start and run Bash 
+	9) First time setup will setup your linux login that is local to your machine
 
 Windows shift s -take a snippet of a screenshot
 windows v - get to copy/paste history
