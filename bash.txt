@@ -1,3 +1,6 @@
+to ssh in w/o password
+Copy public key to authorized_keys in .ssh
+
 to get rid of line endings
 dos2unix filesname
 

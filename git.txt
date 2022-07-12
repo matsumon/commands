@@ -2,7 +2,7 @@ Git
 generate private and public keys
 	1) ssh-keygen -t ed25519 -C nicholas.matsumoto@tektronix.com
 	2) ssh-keygen -t rsa
-
+	3) Copy public key to authorized_keys to ssh in w/o password
 git rebase -i HEAD~5
 	i for interactive
 	5 is the number of commits to squash
@@ -78,6 +78,9 @@ git ls-files . --ignored --exclude-standard --others
 
 List untracked files
 git ls-files . --exclude-standard --others
+
+Delete all files not recognized by git repo
+git clean -ffxd
 
 Submodules: Repo within a repo https://www.youtube.com/watch?v=gSlXo2iLBro&t=85s
 Creates a .gitmodules which is how git keeps track of submodules 
