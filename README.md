@@ -1,2 +1,2 @@
 # Commands
-VSCode, Bash, Git, Tmux, GDB, and Windows Commands
+VSCode, Bash, Git, Tmux, GDB, Powershell, and Windows Commands

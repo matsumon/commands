@@ -1,0 +1,115 @@
+Powershell
+
+Get the current script execution policy
+Get-ExecutionPolicy
+
+Set the current script execution policy
+Set-ExecutionPolicy <Execution Policy>
+Set-ExecutionPolicy <Execution Policy> -Force // sets policy and doesn't prompt user
+Execution Policies:
+    AllSigned
+    RemoteSigned
+    Unrestricted
+    Restricted
+    Bypass
+Ex) Set-ExecutionPolicy Bypass // sets the execution policy to bypass
+
+Print out what a powershell command will do
+<Powershell Command> -WhatIf
+Ex) Set-ExecutionPolicy Bypass -WhatIf
+    Output: What if: Performing the operation "Set-ExecutionPolicy" on target "Bypass"
+
+Get first 5 commands that have service in their name
+Get-Command -Name "<service name>" | select -First 5
+Ex) Get-Command -Name "*service*" | select -First 5
+
+Get guide for command
+Get-Help <service_name> -Full -ShowWindow
+Parameters:
+    -Full //provides full guide to command
+    -ShowWindow //pops the help screen out into its own window
+    -Online //goes to website of help document for command
+Ex) Get-Help Get-Command -Full
+Ex) Get-Help Get-Command -ShowWindow
+Ex) Get-Help Get-Command -Online
+
+Update Help 
+Update-Help //updates Get-Help with latest docs
+
+Comments in Powershell
+Single line: # This is a single line Comments
+Multiple line Comment: <#
+    Multiple line Comment
+#>
+
+Get present working directory
+Get-Location
+
+Change your directory
+Set-Location <directory path>
+Ex) Set-Location C:\Elemental\public
+Ex) Set-Location ..
+
+Bash ls: list all folders and files
+Get-ChildItem <path>
+Parameters:
+    -Recurse #Recusrively lists folder/file structure
+Ex) Get-ChildItem #lists current directory file and folder structure
+Ex) Get-ChildItem C:\Elemental #lists Elemental directory file and folder structure
+Ex) Get-ChildItem C:\Elemental -Recurse #lists Elemental directory file and folder structure recursively
+
+Get Current Date
+Get-Date
+
+Write output to console
+Write-Output "String to be written to console"
+Write-Host "String to be written to console"
+
+Clear screen
+Clear-Host
+
+Copy Folders and Files
+Copy-Item -Path <path to stuff to be copied> -Destination <path to folder for stuff to be copied too>
+Parameters:
+    -Recurse #Recursively copy folders and files to Destination
+Ex) Copy-Item -Path C:\elemental -Destination C:\Users -Recurse
+
+Move Folders and Files
+Move-Item -Path <path to stuff being moved> -Destination <Location for source>
+Ex) Move-Item -Path C:\elemental -Destination C:\Users
+
+Recursively Move Folders and Files
+Copy-Item output piped into Move-Item 
+Ex) Copy-Item C:\elemental -Recurse | Move-Item -Destination C:\users
+
+Rename File/Folder
+Rename-Item -Path <Path to resource to be rename> -NewName <new_name>
+Ex) Rename-Item -Path C:\elemental -NewName blue
+
+Remove File/Folder
+Remove-Item -Path <path to item>
+Parameters:
+    -Recurse
+Ex) Remove-Item -Path C:\elemental
+Ex) Remove-Item -Path C:\elemental -Recurse
+
+Get History of commands
+Get-History
+
+Clear History of commands
+Clear-History
+
+Create a variable if it doesn't exist or change the value
+Set-Variable -Name "myVar" -Value "Value"
+
+Create a new variable even if it already exists
+New-Variable -Name "myVar" -Value "New String"
+
+Get all available variables
+Parameters
+    -Name
+Ex) Get-Variable
+Ex) Get-Variable -name "myVar" #returns myVar variable
+
+Remove\Delete a variable
+Remove-Variable -name "myVar"

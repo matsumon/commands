@@ -1,3 +1,5 @@
+Bash
+
 to ssh in w/o password
 Copy public key to authorized_keys in .ssh
 
@@ -50,3 +52,11 @@ grep -irI “text to find” //find text in files
 
 find file
 find . -name “file name” //find file recursively from current directory
+
+open root terminal
+sudo -i
+
+return all pid's of a program
+pidof <program name>
+Ex)
+	pidof scopeApp
