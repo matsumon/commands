@@ -60,3 +60,10 @@ return all pid's of a program
 pidof <program name>
 Ex)
 	pidof scopeApp
+
+store directory onto stack
+pushd <directory path>
+Ex) pushd ~
+
+pop directory on stack and change directory to it
+popd
