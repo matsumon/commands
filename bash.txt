@@ -15,10 +15,10 @@ see what key strokes correspond to which keys
 xev to see what key strokes correspond to which keys IE push j xev will show j
 
 download files to vim
-scp filename osu/*ssh*/:
+scp file destination_ip:/filepath
 
 to get files from vim
-scp osu:/*filepath*/filename
+scp source_ip:/file	destination
 
 to map network sshfs apt get it later
 pdf split imagemagick
@@ -43,7 +43,10 @@ fuser <port #>/tcp # returns pid of process bound to that port. Give it -k optio
 
 nslookup ip address - looks up dns name
 
-hostname -i returns ip
+Get IP
+hostname -i //sometimes return 127.0.0.1
+hostname -I // returns ip
+
 
 hostname returns dns name
 
