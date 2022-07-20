@@ -67,3 +67,6 @@ Ex) pushd ~
 
 pop directory on stack and change directory to it
 popd
+
+list all cron jobs for a user
+crontab -l

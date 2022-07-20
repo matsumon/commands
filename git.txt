@@ -99,3 +99,6 @@ git clone --recurse-submodules {git repo to clone}
 
 recursively pulls in all submodules + other files
 git pull --recurse-submodules
+
+recursively gets rid of changes
+git submodule foreach --recursive git reset --hard
