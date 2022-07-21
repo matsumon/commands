@@ -102,3 +102,20 @@ git pull --recurse-submodules
 
 recursively gets rid of changes
 git submodule foreach --recursive git reset --hard
+
+git stash
+Description: Acts like a queue. Users can 'git stash push' to create a new stash and 
+save it locally. This will roll back the changes to modified files. The stash can 
+be popped off the stack by using git stash pop. 
+
+push local changes to stash
+git stash push
+
+bring back changes from stash
+git stash pop
+
+list stash history
+git stash list
+
+remove all stash entries
+git stash clear
