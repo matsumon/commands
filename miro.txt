@@ -1,0 +1,15 @@
+miro
+
+move around with hand icon
+right click
+v
+
+select multiple elements
+shift + mouse
+
+bullet points
+* space
+
+numbered list
+1) space
+
