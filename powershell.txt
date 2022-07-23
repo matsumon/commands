@@ -162,8 +162,10 @@ $a = [int] 2
 
 Recursively search folder structure for a file/folder
 Get-ChildItem -Path C:/ -Name git.txt -Recurse
+alias: gci, ls, dir
 
 Search for a string in a file
 Select-String -Path C:\Users\donts\Desktop\commands\powershell.txt -Pattern "recursively"
+alias sls
 can pipe Get-ChildItem command into Select-String to search multiple files need to use Filter param instead of Name
 Get-ChildItem -Path C:\Users\donts\Desktop\commands\ -Filter *.txt -Recurse | Select-String -Pattern "variable"
