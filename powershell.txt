@@ -102,6 +102,9 @@ Clear-History
 Create a variable if it doesn't exist or change the value
 Set-Variable -Name "myVar" -Value "Value"
 
+Create constant variable
+Set-Variable -Name "myVar" -Option Constant -Value "Value"
+
 Create a new variable even if it already exists
 New-Variable -Name "myVar" -Value "New String"
 
@@ -111,5 +114,56 @@ Parameters
 Ex) Get-Variable
 Ex) Get-Variable -name "myVar" #returns myVar variable
 
+Get variable type
+$myVar.GetType()
+
 Remove\Delete a variable
 Remove-Variable -name "myVar"
+
+Find length of string
+$var.Length
+
+Find if substring in a string exists
+$var.Contains(“blue”)
+
+Find index of substring
+$var.IndexOf(“b)
+
+Return a string that has leading and trailing whitespace trimmed
+$var.Trim()
+
+Return a string that only has uppercase letters
+$var.ToUpper()
+
+Return a string that only has lowercase letters
+$var.ToLower()
+
+Return a string that has substrings replaced
+$var.Replace(“b”, “g”)
+
+Multiline substrings
+$text = @"
+This is a 
+multiline string
+"@
+
+Validate datatype
+$text = "blue"
+$text -is [String]
+
+Get all variable methods
+$var | Get-Member
+
+Typecast a variable
+explictly state at init
+[int] $a = 2
+cast value as type
+$a = [int] 2
+
+Recursively search folder structure for a file/folder
+Get-ChildItem -Path C:/ -Name git.txt -Recurse
+
+Search for a string in a file
+Select-String -Path C:\Users\donts\Desktop\commands\powershell.txt -Pattern "recursively"
+can pipe Get-ChildItem command into Select-String to search multiple files need to use Filter param instead of Name
+Get-ChildItem -Path C:\Users\donts\Desktop\commands\ -Filter *.txt -Recurse | Select-String -Pattern "variable"
