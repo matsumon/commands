@@ -169,3 +169,12 @@ Select-String -Path C:\Users\donts\Desktop\commands\powershell.txt -Pattern "rec
 alias sls
 can pipe Get-ChildItem command into Select-String to search multiple files need to use Filter param instead of Name
 Get-ChildItem -Path C:\Users\donts\Desktop\commands\ -Filter *.txt -Recurse | Select-String -Pattern "variable"
+
+display contents of file to terminal
+cat file.txt
+
+overwrite contents of file with another
+cat file.txt > copy.txt
+
+append contents of file with another
+cat file.txt >> copy.txt
