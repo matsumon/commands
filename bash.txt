@@ -73,3 +73,32 @@ popd
 
 list all cron jobs for a user
 crontab -l
+
+systemd: list all services active and non-active
+systemctl list-units --all
+
+systemd start application
+systemctl start application
+
+systemd stop application
+systemctl stop application
+
+systemd restart application
+systemctl restart application
+
+systemd start application at boot
+systemctl enable application
+
+systemd disable application startup at boot
+systemctl disable application
+
+systemd check status of services
+systemctl status application
+
+systemd check specific status of services
+systemctl is-active application
+systemctl is-enabled application
+systemctl is-failed application
+
+systemd cat service file
+systemctl cat application.service

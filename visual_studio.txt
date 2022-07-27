@@ -1,1 +1,48 @@
 Visual Studio
+
+Debugging Step Over
+F10
+
+Debugging Step Into Function
+F11
+
+Debugging Step Out of Function
+Shift F11
+
+Start Debugging
+F5
+
+Stop Debugging 
+Shift F5
+
+Restart Debugging
+ctrl shift F5
+
+Show Breakpoint Window
+ctrl alt b
+
+Show Solutions explorer
+ctrl alt l
+
+Select Next Occurrence
+Download Select Next Occurrence Extension
+Follow setup in README https://github.com/2mas/SelectNextOccurrence
+ctrl d
+
+Delete Line
+ctrl shift l
+
+Move Line
+alt arrows keys
+
+Insert new line above
+ctrl enter
+
+Insert new line below
+ctrl shift enter
+
+Go to line
+ctrl g
+
+Comment 
+ctrl shift /

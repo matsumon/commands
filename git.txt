@@ -119,3 +119,7 @@ git stash list
 
 remove all stash entries
 git stash clear
+
+push and set upstream origin branch
+git push --set-upstream origin branch
+Ex) git push --set-upstream origin sandbox/feature/u607390/PSSW-290
