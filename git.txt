@@ -123,3 +123,11 @@ git stash clear
 push and set upstream origin branch
 git push --set-upstream origin branch
 Ex) git push --set-upstream origin sandbox/feature/u607390/PSSW-290
+
+checkout a branch based off another feature branch
+git checkout -b local_branch remote_branch
+Ex) git checkout -b sandbox/feature/u607390/PSSW-290 origin/feature/stratix10ecr
+
+cherry pick a single file from another branch to add
+git checkout origin/branch_name submodule/path_to_file
+Ex) git checkout origin/sandbox/feature/u607390/PSSW-290 deviceAccess/pmuupdater.bat
