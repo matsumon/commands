@@ -1,5 +1,8 @@
 Visual Studio
 
+Continue Debugging
+F5
+
 Debugging Step Over
 F10
 

@@ -102,3 +102,6 @@ systemctl is-failed application
 
 systemd cat service file
 systemctl cat application.service
+
+pipe error and output to another commands
+ls |& grep elemental
