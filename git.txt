@@ -94,6 +94,10 @@ After need to git commit "files added" and git push
 grabs all submodules(even submodules within submodules) and adds it to repo
 git submodule update --init --recursive
 
+Add a submodule for commit, change where the parent repo points for a single submodule
+git add submodule
+Ex) git add frameworks/hardwareaccess
+
 clone directory + all submodules
 git clone --recurse-submodules {git repo to clone}
 
